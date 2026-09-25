@@ -256,7 +256,7 @@ export const StudioMode: React.FC<StudioModeProps> = ({
         <div className="absolute top-0 right-0 w-32 h-32 bg-radial from-[#C5A85C]/5 to-transparent pointer-events-none" />
         <div className="flex flex-col space-y-3">
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center w-full gap-4">
-            <div className="flex items-center space-x-1.5 text-[10px] font-mono uppercase tracking-[0.2em] text-[#C5A85C]">
+            <div className="flex items-center space-x-1.5 text-xs font-semibold tracking-wider font-mono uppercase tracking-[0.2em] text-[#C5A85C]">
               <span>Profile Variation</span>
               <span className="text-stone-700">&bull;</span>
               <span>Boutique & Agency Studio Mode</span>
@@ -265,7 +265,7 @@ export const StudioMode: React.FC<StudioModeProps> = ({
             <div className="flex items-center space-x-3">
               {/* Demo Mode Toggle */}
               <div className="flex items-center space-x-2 bg-stone-950/45 border border-stone-900 py-1.5 px-3 rounded-sm">
-                <span className="text-[10px] font-mono text-stone-400 tracking-wider uppercase select-none">Demo / Preview</span>
+                <span className="text-xs font-semibold tracking-wider font-mono text-stone-400 tracking-wider uppercase select-none">Demo / Preview</span>
                 <button
                   onClick={() => setDemoMode?.(!demoMode)}
                   className={`relative inline-flex h-4.5 w-9 shrink-0 cursor-pointer rounded-full border border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${
@@ -285,7 +285,7 @@ export const StudioMode: React.FC<StudioModeProps> = ({
               {/* Presentation Mode Toggle button */}
               <button
                 onClick={() => setPresentationMode(!presentationMode)}
-                className={`flex items-center space-x-2 text-[10px] font-mono tracking-wider px-3.5 py-1.5 rounded-sm border transition-all duration-300 cursor-pointer focus:outline-none ${
+                className={`flex items-center space-x-2 text-xs font-semibold tracking-wider font-mono tracking-wider px-3.5 py-1.5 rounded-sm border transition-all duration-300 cursor-pointer focus:outline-none ${
                   presentationMode 
                     ? "bg-[#C5A85C] text-stone-950 border-[#C5A85C] font-semibold" 
                     : "bg-transparent border-stone-850 text-stone-450 hover:text-stone-200 hover:border-stone-700"
@@ -311,7 +311,7 @@ export const StudioMode: React.FC<StudioModeProps> = ({
         <div className="p-4 bg-[#C5A85C]/5 border border-[#C5A85C]/25 rounded-sm flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#C5A85C] animate-pulse" />
-            <p className="text-[10px] font-mono tracking-wider text-[#C5A85C] uppercase">
+            <p className="text-xs font-semibold tracking-wider font-mono tracking-wider text-[#C5A85C] uppercase">
               Client Showcase Active &mdash; Internal backlogs and cognitive routing inputs hidden
             </p>
           </div>
@@ -328,13 +328,13 @@ export const StudioMode: React.FC<StudioModeProps> = ({
       <section className="space-y-4" id="deliverables-matrix-section">
         <div className="flex justify-between items-end border-b border-stone-900 pb-3">
           <div>
-            <span className="text-[10px] font-mono uppercase text-[#C5A85C]/80 tracking-widest block">Operational Core</span>
+            <span className="text-xs font-semibold tracking-wider font-mono uppercase text-[#C5A85C]/80 tracking-widest block">Operational Core</span>
             <h3 className="font-serif text-lg text-stone-100 font-light tracking-tight mt-1">Client Deliverables Matrix</h3>
           </div>
           {!presentationMode && (
             <button
               onClick={() => setShowAddDel(!showAddDel)}
-              className="flex items-center space-x-1.5 text-[10px] font-mono text-stone-400 hover:text-stone-100 transition-colors bg-stone-900/60 border border-stone-850 px-3 py-1.5 rounded-sm cursor-pointer"
+              className="flex items-center space-x-1.5 text-xs font-semibold tracking-wider font-mono text-stone-400 hover:text-stone-100 transition-colors bg-stone-900/60 border border-stone-850 px-3 py-1.5 rounded-sm cursor-pointer"
             >
               <Plus size={12} />
               <span>Add Target Milestone</span>
@@ -406,13 +406,13 @@ export const StudioMode: React.FC<StudioModeProps> = ({
                 <button
                   type="button"
                   onClick={() => setShowAddDel(false)}
-                  className="bg-transparent text-stone-500 hover:text-stone-300 py-1.5 px-4 text-[10px] font-mono uppercase tracking-wider"
+                  className="bg-transparent text-stone-500 hover:text-stone-300 py-1.5 px-4 text-xs font-semibold tracking-wider font-mono uppercase tracking-wider"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="bg-[#C5A85C] hover:bg-[#C5A85C]/90 text-stone-950 px-5 py-1.5 text-[10px] font-mono uppercase tracking-wider font-bold rounded-sm cursor-pointer"
+                  className="bg-[#C5A85C] hover:bg-[#C5A85C]/90 text-stone-950 px-5 py-1.5 text-base font-semibold min-h-[44px] font-semibold tracking-wider font-mono uppercase tracking-wider font-bold rounded-sm cursor-pointer"
                 >
                   Confirm Milestone
                 </button>
@@ -476,7 +476,7 @@ export const StudioMode: React.FC<StudioModeProps> = ({
 
                   <div className="col-span-2 text-left sm:text-right flex sm:flex-col justify-between sm:justify-center items-center sm:items-end">
                     <span className="text-[9px] font-mono text-stone-500 sm:hidden uppercase">Value:</span>
-                    <span className="font-mono text-[11px] font-semibold text-[#C5A85C]/90 tracking-wide">
+                    <span className="font-mono text-xs font-semibold font-semibold text-[#C5A85C]/90 tracking-wide">
                       {del.value}
                     </span>
                     {!presentationMode && (
@@ -504,7 +504,7 @@ export const StudioMode: React.FC<StudioModeProps> = ({
       {/* 2. ASSET REVIEW PIPELINE */}
       <section className="space-y-4" id="asset-review-pipeline-section">
         <div className="border-b border-stone-900 pb-3">
-          <span className="text-[10px] font-mono uppercase text-[#C5A85C]/80 tracking-widest block">Signature Staging</span>
+          <span className="text-xs font-semibold tracking-wider font-mono uppercase text-[#C5A85C]/80 tracking-widest block">Signature Staging</span>
           <h3 className="font-serif text-lg text-stone-100 font-light tracking-tight mt-1">Asset Review Pipeline</h3>
         </div>
 
@@ -546,7 +546,7 @@ export const StudioMode: React.FC<StudioModeProps> = ({
                 );
               })
             ) : (
-              <div className="p-4 border border-dashed border-stone-900 text-center text-[10px] font-mono text-stone-600 rounded-sm">
+              <div className="p-4 border border-dashed border-stone-900 text-center text-xs font-semibold tracking-wider font-mono text-stone-600 rounded-sm">
                 No pipeline assets staged.
               </div>
             )}
@@ -578,15 +578,15 @@ export const StudioMode: React.FC<StudioModeProps> = ({
               <div className="grid grid-cols-3 gap-2.5 bg-stone-900/25 border border-stone-900/40 p-2.5 rounded-sm">
                 <div>
                   <span className="text-[8px] font-mono uppercase text-stone-550 block">Font Core</span>
-                  <span className="text-[10px] text-stone-300 font-sans tracking-wide block mt-0.5 truncate">{activeAsset.specs?.fontFamily || "N/A"}</span>
+                  <span className="text-xs font-semibold tracking-wider text-stone-300 font-sans tracking-wide block mt-0.5 truncate">{activeAsset.specs?.fontFamily || "N/A"}</span>
                 </div>
                 <div>
                   <span className="text-[8px] font-mono uppercase text-[#C5A85C]/80 block">Palette Root</span>
-                  <span className="text-[10px] text-[#C5A85C] font-mono block mt-0.5 truncate">{activeAsset.specs?.primaryColor || "N/A"}</span>
+                  <span className="text-xs font-semibold tracking-wider text-[#C5A85C] font-mono block mt-0.5 truncate">{activeAsset.specs?.primaryColor || "N/A"}</span>
                 </div>
                 <div>
                   <span className="text-[8px] font-mono uppercase text-stone-550 block">Dimensions Layout</span>
-                  <span className="text-[10px] text-stone-300 font-sans tracking-wide block mt-0.5 truncate">{activeAsset.specs?.aspectRatio || "N/A"}</span>
+                  <span className="text-xs font-semibold tracking-wider text-stone-300 font-sans tracking-wide block mt-0.5 truncate">{activeAsset.specs?.aspectRatio || "N/A"}</span>
                 </div>
               </div>
 
@@ -642,7 +642,7 @@ export const StudioMode: React.FC<StudioModeProps> = ({
               <Layout size={32} className="text-stone-600 animate-pulse" />
               <div className="space-y-1">
                 <h4 className="font-serif text-stone-350 text-sm">Review pipeline empty</h4>
-                <p className="text-[11px] text-stone-500 max-w-sm font-sans leading-relaxed">
+                <p className="text-xs font-semibold text-stone-500 max-w-sm font-sans leading-relaxed">
                   Enable <strong className="text-[#C5A85C] font-normal">Demo / Preview Mode</strong> inside System Preferences to temporarily see fully operational lookbooks, feedback, and staging pipelines.
                 </p>
               </div>
@@ -660,7 +660,7 @@ export const StudioMode: React.FC<StudioModeProps> = ({
         </p>
         <button
           onClick={() => setPresentationMode(!presentationMode)}
-          className="bg-[#C5A85C]/10 border border-[#C5A85C]/40 hover:bg-[#C5A85C] hover:text-stone-950 text-[#C5A85C] font-mono text-[11px] uppercase tracking-wider px-6 py-2.5 rounded-sm transition-all cursor-pointer inline-flex items-center space-x-2"
+          className="bg-[#C5A85C]/10 border border-[#C5A85C]/40 hover:bg-[#C5A85C] hover:text-stone-950 text-[#C5A85C] font-mono text-xs font-semibold uppercase tracking-wider px-6 py-2.5 rounded-sm transition-all cursor-pointer inline-flex items-center space-x-2"
           id="studio-stage-share"
         >
           <span>{presentationMode ? "Switch to Interactive Backlog" : "Pristine Screen Share Mode Active"}</span>

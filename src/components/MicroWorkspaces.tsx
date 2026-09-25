@@ -587,7 +587,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
                   <>
                     <span>Inbox</span>
                     {inboxCount > 0 && (
-                      <span className="text-[10px] font-mono leading-none px-1.5 py-0.5 rounded-full bg-stone-900 border border-stone-850 text-[#C5A85C] font-semibold animate-pulse" style={{ animationDuration: "3s" }}>
+                      <span className="text-xs font-semibold tracking-wider font-mono leading-none px-1.5 py-0.5 rounded-full bg-stone-900 border border-stone-850 text-[#C5A85C] font-semibold animate-pulse" style={{ animationDuration: "3s" }}>
                         {inboxCount}
                       </span>
                     )}
@@ -597,7 +597,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
                   <>
                     <span>Focus Mode</span>
                     {nowCount > 0 && (
-                      <span className="text-[10px] font-mono leading-none px-1.5 py-0.5 rounded-full bg-stone-900 border border-stone-850 text-stone-400">
+                      <span className="text-xs font-semibold tracking-wider font-mono leading-none px-1.5 py-0.5 rounded-full bg-stone-900 border border-stone-850 text-stone-400">
                         {nowCount}
                       </span>
                     )}
@@ -607,7 +607,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
                   <>
                     <span>Today</span>
                     {todayCount > 0 && (
-                      <span className="text-[10px] font-mono leading-none px-1.5 py-0.5 rounded-full bg-stone-900 border border-stone-850 text-stone-400">
+                      <span className="text-xs font-semibold tracking-wider font-mono leading-none px-1.5 py-0.5 rounded-full bg-stone-900 border border-stone-850 text-stone-400">
                         {todayCount}
                       </span>
                     )}
@@ -648,7 +648,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
                 {inboxItems.length > 0 && onResetAll && (
                   <button
                     onClick={onResetAll}
-                    className="text-[10px] font-mono uppercase tracking-wider bg-stone-950 border border-stone-900/60 hover:border-stone-700 text-stone-400 hover:text-stone-250 transition-all px-3 py-1.5 rounded-sm shrink-0 cursor-pointer"
+                    className="text-base font-semibold min-h-[44px] font-semibold tracking-wider font-mono uppercase tracking-wider bg-stone-950 border border-stone-900/60 hover:border-stone-700 text-stone-400 hover:text-stone-250 transition-all px-3 py-1.5 rounded-sm shrink-0 cursor-pointer"
                   >
                     Clear All Loops
                   </button>
@@ -673,7 +673,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
                           <div className="flex items-center space-x-3 shrink-0">
                             <button
                               onClick={() => onConvertInboxItem(item)}
-                              className="text-[11px] font-sans tracking-wide text-[#C5A85C] hover:text-stone-100 hover:border-[#C5A85C]/65 bg-stone-950/80 border border-[#C5A85C]/35 px-2 py-1 md:py-0.5 rounded-sm transition-all duration-500 ease-[0.16,1,0.3,1] cursor-pointer"
+                              className="text-xs font-semibold font-sans tracking-wide text-[#C5A85C] hover:text-stone-100 hover:border-[#C5A85C]/65 bg-stone-950/80 border border-[#C5A85C]/35 px-2 py-1 md:py-0.5 rounded-sm transition-all duration-500 ease-[0.16,1,0.3,1] cursor-pointer"
                             >
                               Move to focus
                             </button>
@@ -716,7 +716,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
                           </div>
                           <button
                             onClick={() => onUpdateTask({ ...task, status: TaskStatus.IN_PROGRESS })}
-                            className="text-[11px] font-sans tracking-wide text-stone-400 hover:text-[#C5A85C] hover:border-[#C5A85C]/35 bg-stone-900 border border-stone-850 px-2 py-1 md:py-0.5 rounded-sm transition-all duration-500 ease-[0.16,1,0.3,1] opacity-100 md:opacity-0 md:group-hover:opacity-100 shrink-0 cursor-pointer"
+                            className="text-xs font-semibold font-sans tracking-wide text-stone-400 hover:text-[#C5A85C] hover:border-[#C5A85C]/35 bg-stone-900 border border-stone-850 px-2 py-1 md:py-0.5 rounded-sm transition-all duration-500 ease-[0.16,1,0.3,1] opacity-100 md:opacity-0 md:group-hover:opacity-100 shrink-0 cursor-pointer"
                           >
                             Move to focus
                           </button>
@@ -738,7 +738,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
                       <p className="font-serif italic text-stone-150 text-xl md:text-2xl font-light tracking-wide max-w-lg mx-auto">
                         Your mind is completely clear. Deep breath.
                       </p>
-                      <p className="text-[11px] font-sans text-stone-400 tracking-[0.15em] uppercase font-light">
+                      <p className="text-xs font-semibold font-sans text-stone-400 tracking-[0.15em] uppercase font-light">
                         All objectives routed. Ready for mindful execution.
                       </p>
                     </div>
@@ -758,7 +758,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
                 <button
                   type="submit"
                   disabled={!quickInputText.trim()}
-                  className="text-xs font-sans font-medium text-stone-500 hover:text-stone-300 disabled:text-stone-700 transition-colors"
+                  className="text-base font-semibold min-h-[44px] font-sans font-medium text-stone-500 hover:text-stone-300 disabled:text-stone-700 transition-colors"
                 >
                   Save for later
                 </button>
@@ -776,13 +776,13 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
               className="space-y-8 text-left"
             >
               <div className="flex flex-col space-y-1 text-left border-b border-stone-900/35 pb-4">
-                <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-[#C5A85C]/75">Deep Work Canvas</span>
+                <span className="text-xs font-semibold tracking-wider font-mono tracking-[0.2em] uppercase text-[#C5A85C]/75">Deep Work Canvas</span>
                 <h3 className="font-serif text-lg text-stone-200 font-light tracking-tight">Singular Focus</h3>
                 <p className="text-xs text-stone-400 font-sans font-light">Establish your cornerstone intentions. Dedicate your undivided focus to a single point of progress.</p>
               </div>
 
               <div className="space-y-6 pt-2">
-                <span className={`text-[10px] font-mono tracking-wider uppercase text-stone-500 block transition-all duration-500 ${isShielded ? "opacity-20" : "opacity-100"}`}>
+                <span className={`text-xs font-semibold tracking-wider font-mono tracking-wider uppercase text-stone-500 block transition-all duration-500 ${isShielded ? "opacity-20" : "opacity-100"}`}>
                   Active deep work
                 </span>
                 <div className="space-y-1">
@@ -812,7 +812,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
                         </div>
                         <button
                           onClick={() => onUpdateTask({ ...task, status: TaskStatus.IN_PROGRESS })}
-                          className="text-[11px] font-sans tracking-wide text-stone-400 hover:text-[#C5A85C] hover:border-[#C5A85C]/35 bg-stone-900 border border-stone-850 px-2 py-1 md:py-0.5 rounded-sm transition-all duration-500 ease-[0.16,1,0.3,1] opacity-100 md:opacity-0 md:group-hover:opacity-100 shrink-0 cursor-pointer"
+                          className="text-xs font-semibold font-sans tracking-wide text-stone-400 hover:text-[#C5A85C] hover:border-[#C5A85C]/35 bg-stone-900 border border-stone-850 px-2 py-1 md:py-0.5 rounded-sm transition-all duration-500 ease-[0.16,1,0.3,1] opacity-100 md:opacity-0 md:group-hover:opacity-100 shrink-0 cursor-pointer"
                         >
                           Move to focus
                         </button>
@@ -845,7 +845,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
                 <button
                   type="submit"
                   disabled={!quickInputText.trim()}
-                  className="text-xs font-sans font-medium text-[#C5A85C] hover:text-stone-100 disabled:text-stone-600 transition-colors"
+                  className="text-base font-semibold min-h-[44px] font-sans font-medium text-[#C5A85C] hover:text-stone-100 disabled:text-stone-600 transition-colors"
                 >
                   Add deep work
                 </button>
@@ -863,7 +863,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
               className="space-y-8 text-left"
             >
               <div className="flex flex-col space-y-1 text-left border-b border-stone-900/35 pb-4">
-                <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-[#C5A85C]/75">Rituals & Habits</span>
+                <span className="text-xs font-semibold tracking-wider font-mono tracking-[0.2em] uppercase text-[#C5A85C]/75">Rituals & Habits</span>
                 <h3 className="font-serif text-lg text-stone-200 font-light tracking-tight">Daily Anchors</h3>
                 <p className="text-xs text-stone-400 font-sans font-light">A curated collection of small supportive habits and routine checklist tasks to anchor your focal window.</p>
               </div>
@@ -893,7 +893,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
                           />
                           <span className="text-stone-300 group-hover:text-stone-200 font-sans tracking-wide">{task.title}</span>
                         </div>
-                        <span className="text-[10px] font-mono text-stone-500 bg-stone-900 border border-stone-850 px-2 py-0.5 rounded-sm opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-500 ease-[0.16,1,0.3,1] font-light">
+                        <span className="text-xs font-semibold tracking-wider font-mono text-stone-500 bg-stone-900 border border-stone-850 px-2 py-0.5 rounded-sm opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-500 ease-[0.16,1,0.3,1] font-light">
                           Simple task
                         </span>
                       </div>
@@ -924,7 +924,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
                   <button
                     type="submit"
                     disabled={!quickInputText.trim()}
-                    className="text-xs font-sans font-medium text-[#C5A85C] hover:text-stone-100 disabled:text-stone-600 transition-colors"
+                    className="text-base font-semibold min-h-[44px] font-sans font-medium text-[#C5A85C] hover:text-stone-100 disabled:text-stone-600 transition-colors"
                   >
                     Add simple task
                   </button>
@@ -978,7 +978,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
               className="space-y-12 text-left"
             >
               <div className="flex flex-col space-y-1 text-left border-b border-stone-900/35 pb-4">
-                <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-[#C5A85C]/75">Ambient Space</span>
+                <span className="text-xs font-semibold tracking-wider font-mono tracking-[0.2em] uppercase text-[#C5A85C]/75">Ambient Space</span>
                 <h3 className="font-serif text-lg text-stone-200 font-light tracking-tight">Resonance & Harmony</h3>
                 <p className="text-xs text-stone-400 font-sans font-light">Create a gentle acoustic backdrop with custom-synthesized focus tones, ambient guides, or interactive sonic resonances.</p>
               </div>
@@ -1171,7 +1171,7 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
                                             : Horizon.NOW;
                                       onUpdateTask({ ...task, horizon: nextScale });
                                     }}
-                                    className="text-[11px] font-sans tracking-wide text-stone-400 hover:text-[#C5A85C] hover:border-[#C5A85C]/35 bg-stone-900 border border-stone-850 px-2 py-1 md:py-0.5 rounded-sm transition-all duration-500 ease-[0.16,1,0.3,1] opacity-100 md:opacity-0 md:group-hover:opacity-100 cursor-pointer"
+                                    className="text-xs font-semibold font-sans tracking-wide text-stone-400 hover:text-[#C5A85C] hover:border-[#C5A85C]/35 bg-stone-900 border border-stone-850 px-2 py-1 md:py-0.5 rounded-sm transition-all duration-500 ease-[0.16,1,0.3,1] opacity-100 md:opacity-0 md:group-hover:opacity-100 cursor-pointer"
                                   >
                                     Cycle
                                   </button>
@@ -1217,14 +1217,14 @@ export const MicroWorkspaces: React.FC<MicroWorkspacesProps> = ({
                   <div className="flex flex-wrap items-center gap-4 pt-1">
                     <button
                       type="submit"
-                      className="text-[10px] font-mono tracking-wider uppercase text-stone-400 hover:text-stone-200 transition-all cursor-pointer bg-stone-900/60 hover:bg-stone-900 border border-stone-850 px-3.5 py-2 rounded-sm"
+                      className="text-base font-semibold min-h-[44px] font-semibold tracking-wider font-mono tracking-wider uppercase text-stone-400 hover:text-stone-200 transition-all cursor-pointer bg-stone-900/60 hover:bg-stone-900 border border-stone-850 px-3.5 py-2 rounded-sm"
                     >
                       Save Note
                     </button>
                     <button
                       type="button"
                       onClick={handleMinimalistCleanup}
-                      className="text-[10px] font-mono tracking-wider uppercase border border-stone-850/60 rounded-sm px-3.5 py-2 text-stone-500 hover:text-[#C5A85C] hover:border-[#C5A85C]/30 transition-all cursor-pointer bg-transparent hover:bg-stone-900/15"
+                      className="text-base font-semibold min-h-[44px] font-semibold tracking-wider font-mono tracking-wider uppercase border border-stone-850/60 rounded-sm px-3.5 py-2 text-stone-500 hover:text-[#C5A85C] hover:border-[#C5A85C]/30 transition-all cursor-pointer bg-transparent hover:bg-stone-900/15"
                       id="minimalist-cleanup-btn"
                     >
                       Minimalist Cleanup

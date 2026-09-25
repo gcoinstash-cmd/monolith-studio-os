@@ -667,7 +667,7 @@ ${assets.length > 0 ? assets.map((a) => {
         {/* 1. SKELETON HEADER */}
         <header className="w-full max-w-2xl mx-auto flex justify-between items-center pb-10 md:pb-12 border-b border-stone-900/25 opacity-40">
           <div className="flex flex-col text-left">
-            <span className="tracking-widest text-[11px] uppercase font-mono font-medium text-stone-300">
+            <span className="tracking-widest text-xs font-semibold uppercase font-mono font-medium text-stone-300">
               MONOLITH STUDIO
             </span>
             <span className="tracking-widest text-[9px] uppercase font-mono text-stone-600 mt-1.5 font-medium animate-pulse">
@@ -696,7 +696,7 @@ ${assets.length > 0 ? assets.map((a) => {
         </main>
 
         {/* SKELETON FOOTER */}
-        <footer className="w-full max-w-2xl mx-auto pt-16 border-t border-stone-800/30 flex flex-col sm:flex-row justify-between items-center text-[10px] font-sans text-stone-605 gap-4 opacity-30">
+        <footer className="w-full max-w-2xl mx-auto pt-16 border-t border-stone-800/30 flex flex-col sm:flex-row justify-between items-center text-xs font-semibold tracking-wider font-sans text-stone-605 gap-4 opacity-30">
           <div>
             <span>MONOLITH STUDIO &mdash; Brutalist Architecture &amp; BIM Project Portal OS</span>
           </div>
@@ -752,7 +752,7 @@ ${assets.length > 0 ? assets.map((a) => {
           >
             MONOLITH STUDIO
           </button>
-          <span className="tracking-widest text-[11px] uppercase font-mono text-stone-400 mt-1.5 font-semibold">
+          <span className="tracking-widest text-xs font-semibold uppercase font-mono text-stone-400 mt-1.5 font-semibold">
             {todayFormatted}
           </span>
         </div>
@@ -801,7 +801,7 @@ ${assets.length > 0 ? assets.map((a) => {
                   )}
                 </div>
                 <div className="space-y-0.5 mt-2">
-                  <span className={`text-[10px] font-mono tracking-widest font-bold block transition-colors ${active ? "text-stone-100" : "text-stone-400"}`}>
+                  <span className={`text-xs font-semibold tracking-wider font-mono tracking-widest font-bold block transition-colors ${active ? "text-stone-100" : "text-stone-400"}`}>
                     {pillar.name}
                   </span>
                   <span className={`text-[9.5px] font-sans font-light block transition-colors leading-tight ${active ? "text-stone-300" : "text-stone-650 group-hover:text-stone-400"}`}>
@@ -841,7 +841,7 @@ ${assets.length > 0 ? assets.map((a) => {
               <h1 className="font-serif text-3xl md:text-5xl text-stone-100 tracking-tighter leading-tight font-light">
                 Clear your mind. Start one task.
               </h1>
-              <p className="text-stone-400 text-xs md:text-sm font-light max-w-md mx-auto leading-relaxed">
+              <p className="text-stone-400 text-base font-semibold font-light max-w-md mx-auto leading-relaxed">
                 Capture what’s in your head and get one clear next step.
               </p>
             </section>
@@ -1004,7 +1004,7 @@ ${assets.length > 0 ? assets.map((a) => {
             <div className="bg-[#161616]/40 border border-stone-900/20 rounded-sm py-6 md:py-8 px-8 md:px-12 text-left relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-radial from-[#C5A85C]/5 to-transparent pointer-events-none" />
               <div className="flex flex-col space-y-2">
-                <div className="flex items-center space-x-1.5 text-[10px] font-mono uppercase tracking-[0.2em] text-[#C5A85C]">
+                <div className="flex items-center space-x-1.5 text-xs font-semibold tracking-wider font-mono uppercase tracking-[0.2em] text-[#C5A85C]">
                   <span>Pillar 04</span>
                   <span className="text-stone-700">&bull;</span>
                   <span>Data Sovereignty & Portability</span>
@@ -1023,7 +1023,7 @@ ${assets.length > 0 ? assets.map((a) => {
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C5A85C]" />
                   <h4 className="text-xs font-mono uppercase text-stone-200 tracking-wider">Local Privacy</h4>
                 </div>
-                <p className="text-[11px] text-stone-400 font-sans font-light leading-relaxed">
+                <p className="text-xs font-semibold text-stone-400 font-sans font-light leading-relaxed">
                   Confined strictly to an Isolated Local Environment. Zero external analytics, zero tracking telemetry, and 100% private.
                 </p>
               </div>
@@ -1033,7 +1033,7 @@ ${assets.length > 0 ? assets.map((a) => {
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C5A85C]" />
                   <h4 className="text-xs font-mono uppercase text-stone-200 tracking-wider">Full Ownership</h4>
                 </div>
-                <p className="text-[11px] text-stone-400 font-sans font-light leading-relaxed">
+                <p className="text-xs font-semibold text-stone-400 font-sans font-light leading-relaxed">
                   You own 100% of your data. Export your entire psychological workspace in standard markdown formats at any time.
                 </p>
               </div>
@@ -1043,7 +1043,7 @@ ${assets.length > 0 ? assets.map((a) => {
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C5A85C]" />
                   <h4 className="text-xs font-mono uppercase text-stone-200 tracking-wider">Zero Cloud Dependency</h4>
                 </div>
-                <p className="text-[11px] text-stone-400 font-sans font-light leading-relaxed">
+                <p className="text-xs font-semibold text-stone-400 font-sans font-light leading-relaxed">
                   Operates flawlessly in deep cabins, offline workspaces, or airplanes. Zero intermediate servers or network latencies.
                 </p>
               </div>
@@ -1053,7 +1053,7 @@ ${assets.length > 0 ? assets.map((a) => {
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C5A85C]" />
                   <h4 className="text-xs font-mono uppercase text-stone-100 tracking-wider">100% Obsidian Compatibility</h4>
                 </div>
-                <p className="text-[11px] text-stone-400 font-sans font-light leading-relaxed">
+                <p className="text-xs font-semibold text-stone-400 font-sans font-light leading-relaxed">
                   Adheres strictly to markdown layout standards. Place directly into Obsidian vaults with dynamic tags and Wiki links support.
                 </p>
               </div>
@@ -1077,7 +1077,7 @@ ${assets.length > 0 ? assets.map((a) => {
             {/* PREVIEW CONTAINER WITH TAB TOGGLES */}
             <div className="space-y-3">
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 border-b border-stone-900 pb-2">
-                <span className="text-[10px] font-mono uppercase text-stone-400 tracking-widest block">Formatted Vault Schema Preview (.md)</span>
+                <span className="text-xs font-semibold tracking-wider font-mono uppercase text-stone-400 tracking-widest block">Formatted Vault Schema Preview (.md)</span>
                 
                 {/* Visual tabs selectors */}
                 <div className="flex space-x-1.5 bg-stone-950 p-1 border border-stone-900 rounded-sm">
@@ -1183,7 +1183,7 @@ active_open_loops: ${inboxItems.length}
               </p>
               <button
                 onClick={handleExportWorkspace}
-                className="bg-[#C5A85C] hover:bg-[#C5A85C]/90 text-stone-950 font-mono text-[11px] font-semibold uppercase tracking-wider px-6 py-2.5 rounded-sm transition-all cursor-pointer inline-flex items-center space-x-2"
+                className="bg-[#C5A85C] hover:bg-[#C5A85C]/90 text-stone-950 font-mono text-base font-semibold min-h-[44px] font-semibold font-semibold uppercase tracking-wider px-6 py-2.5 rounded-sm transition-all cursor-pointer inline-flex items-center space-x-2"
                 id="vault-dashboard-export"
               >
                 <Download size={11} />
@@ -1219,11 +1219,11 @@ active_open_loops: ${inboxItems.length}
         <section id="sovereign-data-vault" className="w-full max-w-2xl mx-auto mt-16 p-6 rounded-sm bg-[#161616]/15 border border-stone-900/10 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 transition-all duration-500 ease-[0.16,1,0.3,1] hover:border-stone-800">
           <div className="space-y-1 text-left">
             <h4 className="font-serif text-sm text-stone-400 font-light tracking-wide">Offline Storage</h4>
-            <p className="text-[11px] text-stone-600 font-sans font-light">Download your workspace as plain text. Keep complete ownership of your tasks with offline portability.</p>
+            <p className="text-xs font-semibold text-stone-600 font-sans font-light">Download your workspace as plain text. Keep complete ownership of your tasks with offline portability.</p>
           </div>
           <button
             onClick={handleExportWorkspace}
-            className="text-[11px] font-mono tracking-wider uppercase text-stone-400 hover:text-stone-200 hover:border-stone-600 bg-stone-950/25 border border-stone-900/30 px-3.5 py-2 rounded-sm transition-all duration-500 ease-[0.16,1,0.3,1] cursor-pointer shrink-0"
+            className="text-base font-semibold min-h-[44px] font-semibold font-mono tracking-wider uppercase text-stone-400 hover:text-stone-200 hover:border-stone-600 bg-stone-950/25 border border-stone-900/30 px-3.5 py-2 rounded-sm transition-all duration-500 ease-[0.16,1,0.3,1] cursor-pointer shrink-0"
             id="sovereign-export-btn"
             title="Export complete session archive to Markdown document"
           >
@@ -1233,7 +1233,7 @@ active_open_loops: ${inboxItems.length}
       )}
 
       {/* FOOTER */}
-      <footer className={`w-full max-w-2xl mx-auto pt-10 pb-16 border-t border-stone-900/15 flex flex-col sm:flex-row justify-between items-center text-[10px] font-mono text-stone-400 gap-4 transition-all duration-500 ease-[0.16,1,0.3,1] ${isCurrentlyImmersive ? "opacity-20" : isSecondaryDimmed ? "opacity-20 pointer-events-none select-none" : "opacity-100"}`} id="planner-footer">
+      <footer className={`w-full max-w-2xl mx-auto pt-10 pb-16 border-t border-stone-900/15 flex flex-col sm:flex-row justify-between items-center text-xs font-semibold tracking-wider font-mono text-stone-400 gap-4 transition-all duration-500 ease-[0.16,1,0.3,1] ${isCurrentlyImmersive ? "opacity-20" : isSecondaryDimmed ? "opacity-20 pointer-events-none select-none" : "opacity-100"}`} id="planner-footer">
         <div>
           <span>FOCUS OS — A minimalist workspace for deep execution.</span>
         </div>
@@ -1264,7 +1264,7 @@ active_open_loops: ${inboxItems.length}
               </button>
 
               <div className="space-y-2">
-                <span className="text-[10px] font-mono text-[#C5A85C] uppercase tracking-widest block">
+                <span className="text-xs font-semibold tracking-wider font-mono text-[#C5A85C] uppercase tracking-widest block">
                   System Preferences
                 </span>
                 <h3 className="font-serif text-2xl text-stone-100 font-light tracking-tight">
@@ -1280,7 +1280,7 @@ active_open_loops: ${inboxItems.length}
                   <span className="text-stone-300">Default Blueprints</span>
                   <button
                     onClick={handleResetToDefaults}
-                    className="text-[10px] font-mono uppercase bg-stone-900 border border-stone-800 hover:border-red-900 text-stone-400 py-2 px-4 rounded-sm flex items-center space-x-2 transition-all cursor-pointer animate-none"
+                    className="text-base font-semibold min-h-[44px] font-semibold tracking-wider font-mono uppercase bg-stone-900 border border-stone-800 hover:border-red-900 text-stone-400 py-2 px-4 rounded-sm flex items-center space-x-2 transition-all cursor-pointer animate-none"
                     id="factory-reset-btn"
                   >
                     <RotateCcw size={11} />
@@ -1292,7 +1292,7 @@ active_open_loops: ${inboxItems.length}
                   <span className="text-stone-300">Data Sovereignty</span>
                   <button
                     onClick={handleExportWorkspace}
-                    className="text-[10px] font-mono uppercase bg-stone-900 border border-stone-800 hover:border-[#C5A85C]/60 text-[#C5A85C] py-2 px-4 rounded-sm transition-all cursor-pointer"
+                    className="text-base font-semibold min-h-[44px] font-semibold tracking-wider font-mono uppercase bg-stone-900 border border-stone-800 hover:border-[#C5A85C]/60 text-[#C5A85C] py-2 px-4 rounded-sm transition-all cursor-pointer"
                     id="settings-export-btn"
                     title="Export complete session archive to Markdown document"
                   >
@@ -1303,7 +1303,7 @@ active_open_loops: ${inboxItems.length}
                 <div className="flex justify-between items-center text-xs pt-3 border-t border-stone-900/40">
                   <div className="flex flex-col text-left">
                     <span className="text-stone-300 font-sans font-medium">Demo / Preview Mode</span>
-                    <span className="text-[10px] text-stone-500 font-sans mt-0.5">Load premium lookbooks & milestones</span>
+                    <span className="text-xs font-semibold tracking-wider text-stone-500 font-sans mt-0.5">Load premium lookbooks & milestones</span>
                   </div>
                   <button
                     onClick={() => setDemoMode(!demoMode)}
@@ -1322,7 +1322,7 @@ active_open_loops: ${inboxItems.length}
                 </div>
               </div>
 
-              <div className="border-t border-stone-900 pt-4 text-[10px] text-stone-500 font-mono flex items-center space-x-2">
+              <div className="border-t border-stone-900 pt-4 text-xs font-semibold tracking-wider text-stone-500 font-mono flex items-center space-x-2">
                 <Info size={11} className="text-[#C5A85C]" />
                 <span>ADHD Support Active</span>
               </div>
@@ -1355,10 +1355,10 @@ active_open_loops: ${inboxItems.length}
               <div className="space-y-6 text-left">
                 {/* Step indicator */}
                 <div className="flex justify-between items-center border-b border-stone-900 pb-3">
-                  <span className="text-[10px] font-mono tracking-[0.25em] text-[#C5A85C] uppercase font-bold">
+                  <span className="text-xs font-semibold tracking-wider font-mono tracking-[0.25em] text-[#C5A85C] uppercase font-bold">
                     System Initialization
                   </span>
-                  <span className="text-[10px] font-mono text-stone-500">
+                  <span className="text-xs font-semibold tracking-wider font-mono text-stone-500">
                     Step {onboardingStep + 1} of 3
                   </span>
                 </div>
@@ -1374,7 +1374,7 @@ active_open_loops: ${inboxItems.length}
                     <h2 className="font-serif text-2xl text-stone-100 font-light tracking-tight leading-snug">
                       Sovereign Workspace Architecture
                     </h2>
-                    <p className="text-stone-300 text-xs md:text-sm font-sans font-light leading-relaxed">
+                    <p className="text-stone-300 text-base font-semibold font-sans font-light leading-relaxed">
                       Welcome to Focus OS. This is a highly protective environment engineered strictly of raw local state to zero out psychological noise and help you maintain sovereign control of your attention.
                     </p>
                     <p className="text-stone-450 text-xs font-sans font-light leading-relaxed">
@@ -1394,10 +1394,10 @@ active_open_loops: ${inboxItems.length}
                     <h2 className="font-serif text-2xl text-stone-100 font-light tracking-tight leading-snug">
                       Inbox Loops to Deep Focus
                     </h2>
-                    <p className="text-stone-300 text-xs md:text-sm font-sans font-light leading-relaxed">
+                    <p className="text-stone-300 text-base font-semibold font-sans font-light leading-relaxed">
                       Offload peripheral thoughts and raw inputs instantly into your <strong className="text-stone-200">Open Loops</strong>. This keeps your working memory clear and avoids task-switching stress.
                     </p>
-                    <p className="text-stone-300 text-xs md:text-sm font-sans font-light leading-relaxed">
+                    <p className="text-stone-300 text-base font-semibold font-sans font-light leading-relaxed">
                       Evaluate your thoughts, assign them category energy weights, and elevate just <strong className="text-stone-200">one single focal objective</strong> into the Focus Chamber at a time.
                     </p>
                   </motion.div>
@@ -1414,10 +1414,10 @@ active_open_loops: ${inboxItems.length}
                     <h2 className="font-serif text-2xl text-stone-100 font-light tracking-tight leading-snug">
                       Immersive Sensory Isolation
                     </h2>
-                    <p className="text-stone-300 text-xs md:text-sm font-sans font-light leading-relaxed">
+                    <p className="text-stone-300 text-base font-semibold font-sans font-light leading-relaxed">
                       Enter <strong className="text-[#C5A85C]">Visual Calm Mode</strong> to hide the entire workspace interface, leaving only a gorgeous minimal countdown progress ring.
                     </p>
-                    <p className="text-stone-300 text-xs md:text-sm font-sans font-light leading-relaxed">
+                    <p className="text-stone-300 text-base font-semibold font-sans font-light leading-relaxed">
                       Activate warm, synthesized acoustic waves directly in-browser to mask ambient room noises and maintain complete attention coherence.
                     </p>
                   </motion.div>
@@ -1446,7 +1446,7 @@ active_open_loops: ${inboxItems.length}
                       }
                     }}
                     disabled={onboardingStep === 0}
-                    className={`text-[10px] font-mono tracking-wider uppercase px-4 py-2 border border-stone-850 rounded-sm transition-all focus:outline-none ${
+                    className={`text-xs font-semibold tracking-wider font-mono tracking-wider uppercase px-4 py-2 border border-stone-850 rounded-sm transition-all focus:outline-none ${
                       onboardingStep === 0
                         ? "text-stone-700 border-transparent bg-transparent pointer-events-none"
                         : "text-stone-400 hover:text-stone-200 hover:bg-stone-900 cursor-pointer"
@@ -1458,7 +1458,7 @@ active_open_loops: ${inboxItems.length}
                   {onboardingStep < 2 ? (
                     <button
                       onClick={() => setOnboardingStep((prev) => prev + 1)}
-                      className="text-[10px] font-mono tracking-wider uppercase bg-[#C5A85C]/10 border border-[#C5A85C]/30 hover:border-[#C5A85C]/60 text-[#C5A85C] hover:text-stone-200 px-5 py-2.5 rounded-sm transition-all cursor-pointer flex items-center space-x-1"
+                      className="text-xs font-semibold tracking-wider font-mono tracking-wider uppercase bg-[#C5A85C]/10 border border-[#C5A85C]/30 hover:border-[#C5A85C]/60 text-[#C5A85C] hover:text-stone-200 px-5 py-2.5 rounded-sm transition-all cursor-pointer flex items-center space-x-1"
                     >
                       <span>Continue</span>
                     </button>
@@ -1470,7 +1470,7 @@ active_open_loops: ${inboxItems.length}
                         } catch (_) {}
                         setShowOnboarding(false);
                       }}
-                      className="text-[10px] font-mono tracking-wider uppercase bg-[#C5A85C] text-[#0e0e11] font-semibold hover:bg-stone-100 transition-all px-5 py-2.5 rounded-sm shadow-md cursor-pointer flex items-[#0e0e11] space-x-1"
+                      className="text-xs font-semibold tracking-wider font-mono tracking-wider uppercase bg-[#C5A85C] text-[#0e0e11] font-semibold hover:bg-stone-100 transition-all px-5 py-2.5 rounded-sm shadow-md cursor-pointer flex items-[#0e0e11] space-x-1"
                     >
                       <span>Initialize Workspace</span>
                     </button>
@@ -1498,7 +1498,7 @@ active_open_loops: ${inboxItems.length}
                   <span className="p-2 bg-[#C5A85C] text-black rounded-lg text-lg">🏛️</span>
                   <div>
                     <h3 className="text-base font-mono font-bold tracking-widest text-white uppercase">Principal Architect Door</h3>
-                    <p className="text-[10px] text-stone-400 font-mono">MONOLITH STUDIO • BIM OS</p>
+                    <p className="text-xs font-semibold tracking-wider text-stone-400 font-mono">MONOLITH STUDIO • BIM OS</p>
                   </div>
                 </div>
                 <button
@@ -1516,7 +1516,7 @@ active_open_loops: ${inboxItems.length}
               {/* 1-Click Auto-Fill Demo Passcode Cheat Code */}
               <div className="bg-[#C5A85C]/10 border border-[#C5A85C]/30 rounded-lg p-3.5 mb-6 flex items-center justify-between">
                 <div>
-                  <span className="text-[10px] uppercase font-mono tracking-widest text-[#C5A85C] block font-semibold">
+                  <span className="text-xs font-semibold tracking-wider uppercase font-mono tracking-widest text-[#C5A85C] block font-semibold">
                     1-CLICK CHEAT CODE (BUYER PREVIEW)
                   </span>
                   <span className="text-xs font-mono font-bold text-white tracking-wider">
@@ -1537,7 +1537,7 @@ active_open_loops: ${inboxItems.length}
 
               <form onSubmit={handleAdminUnlock} className="space-y-4">
                 <div>
-                  <label className="block text-[11px] font-mono uppercase tracking-wider text-stone-400 mb-1">
+                  <label className="block text-sm font-semibold font-mono uppercase tracking-wider text-stone-400 mb-1">
                     Studio Passkey
                   </label>
                   <input
@@ -1560,7 +1560,7 @@ active_open_loops: ${inboxItems.length}
                   </button>
                   <button
                     type="submit"
-                    className="flex-1 py-2.5 bg-[#C5A85C] hover:bg-[#b0944e] text-black font-bold text-xs uppercase tracking-widest font-mono rounded-lg transition-all shadow cursor-pointer active:scale-95"
+                    className="flex-1 py-2.5 bg-[#C5A85C] hover:bg-[#b0944e] text-black font-bold text-base font-semibold min-h-[44px] uppercase tracking-widest font-mono rounded-lg transition-all shadow cursor-pointer active:scale-95"
                   >
                     Enter Control Room
                   </button>

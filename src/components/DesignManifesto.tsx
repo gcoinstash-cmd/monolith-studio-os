@@ -29,7 +29,7 @@ export const DesignManifesto: React.FC<DesignManifestoProps> = ({
             className="flex items-center space-x-3.5 focus:outline-none text-left cursor-pointer group"
             id="manifesto-toggle-expand"
           >
-            <div className="p-1 px-2 rounded-sm bg-[#C5A85C]/10 text-[#C5A85C] text-[10px] font-mono tracking-widest uppercase">
+            <div className="p-1 px-2 rounded-sm bg-[#C5A85C]/10 text-[#C5A85C] text-xs font-semibold tracking-wider font-mono tracking-widest uppercase">
               Manifesto
             </div>
             <h3 className="font-serif text-base text-stone-200 font-light group-hover:text-stone-100 transition-colors">
@@ -114,19 +114,19 @@ export const DesignManifesto: React.FC<DesignManifestoProps> = ({
                   </h4>
                   <ul className="space-y-3 text-stone-400 pl-1">
                     <li className="flex items-start">
-                      <span className="font-mono text-[#C5A85C] text-[10px] w-5 shrink-0 mt-0.5">01/</span>
+                      <span className="font-mono text-[#C5A85C] text-xs font-semibold tracking-wider w-5 shrink-0 mt-0.5">01/</span>
                       <div>
                         <strong className="text-stone-200 font-medium">Enter Thoughts Freely:</strong> Record any random thought or task into the main field. It seamlessly routes low-energy items to your Simple Tasks, complex tasks to Active Deep Work, or unorganized thoughts straight to your Inbox.
                       </div>
                     </li>
                     <li className="flex items-start">
-                      <span className="font-mono text-[#C5A85C] text-[10px] w-5 shrink-0 mt-0.5">02/</span>
+                      <span className="font-mono text-[#C5A85C] text-xs font-semibold tracking-wider w-5 shrink-0 mt-0.5">02/</span>
                       <div>
                         <strong className="text-stone-200 font-medium">Set One Clear Target:</strong> Choose the task you want to work on. Realize its priority as it fills the Active Focus chamber at the center of your page.
                       </div>
                     </li>
                     <li className="flex items-start">
-                      <span className="font-mono text-[#C5A85C] text-[10px] w-5 shrink-0 mt-0.5">03/</span>
+                      <span className="font-mono text-[#C5A85C] text-xs font-semibold tracking-wider w-5 shrink-0 mt-0.5">03/</span>
                       <div>
                         <strong className="text-stone-200 font-medium">Activate Focus Mode:</strong> Turn on Focus Mode to dim distracting elements. Listen to soft ambient tone waves to filter out background noise, complete your work, and tap to finish.
                       </div>
@@ -138,7 +138,7 @@ export const DesignManifesto: React.FC<DesignManifestoProps> = ({
                 <div className="pt-4 flex justify-end">
                   <button
                     onClick={onDismiss}
-                    className="text-[10px] font-mono uppercase bg-stone-900 border border-stone-800 hover:border-[#C5A85C] text-stone-300 py-2 px-5 rounded-sm transition-all duration-500 ease-[0.16,1,0.3,1] focus:outline-none cursor-pointer"
+                    className="text-base font-semibold min-h-[44px] font-semibold tracking-wider font-mono uppercase bg-stone-900 border border-stone-800 hover:border-[#C5A85C] text-stone-300 py-2 px-5 rounded-sm transition-all duration-500 ease-[0.16,1,0.3,1] focus:outline-none cursor-pointer"
                     id="manifesto-ack-btn"
                   >
                     Initialize Cosmic Calm &mdash; Align Channels

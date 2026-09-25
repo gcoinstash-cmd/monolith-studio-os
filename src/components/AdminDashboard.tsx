@@ -100,7 +100,7 @@ export function AdminDashboard({ onExit }: AdminDashboardProps) {
             <h1 className="font-mono text-base font-bold tracking-widest text-white uppercase">
               MONOLITH STUDIO • PRINCIPAL BLUEPRINT ROOM
             </h1>
-            <p className="text-[10px] font-mono text-stone-400 uppercase tracking-widest">
+            <p className="text-xs font-semibold tracking-wider font-mono text-stone-400 uppercase tracking-widest">
               Brutalist Architecture &amp; BIM Project Portal • v1.0.0
             </p>
           </div>
@@ -114,7 +114,7 @@ export function AdminDashboard({ onExit }: AdminDashboardProps) {
 
           <button
             onClick={onExit}
-            className="flex items-center space-x-2 px-4 py-2 bg-stone-900 hover:bg-stone-800 text-stone-300 hover:text-white border border-stone-800 rounded-lg text-xs font-mono transition-all cursor-pointer"
+            className="flex items-center space-x-2 px-5 py-3 min-h-[44px] bg-stone-900 hover:bg-stone-800 text-stone-300 hover:text-white border border-stone-800 rounded-lg text-base font-semibold min-h-[44px] font-mono transition-all cursor-pointer"
           >
             <LogOut size={14} />
             <span>Return to Studio Portal</span>
@@ -132,7 +132,7 @@ export function AdminDashboard({ onExit }: AdminDashboardProps) {
               <DollarSign size={14} className="text-[#C5A85C]" />
             </div>
             <p className="font-mono text-2xl font-bold text-white">$745,000</p>
-            <p className="text-[11px] text-emerald-400 font-mono mt-1">+24.5% vs prior quarter</p>
+            <p className="text-xs font-semibold text-emerald-400 font-mono mt-1">+24.5% vs prior quarter</p>
           </div>
 
           <div className="bg-[#141416] border border-stone-800 p-5 rounded-xl">
@@ -141,7 +141,7 @@ export function AdminDashboard({ onExit }: AdminDashboardProps) {
               <Box size={14} className="text-[#C5A85C]" />
             </div>
             <p className="font-mono text-2xl font-bold text-white">75,300 sqft</p>
-            <p className="text-[11px] text-stone-400 font-mono mt-1">3 Monolithic Pavilions</p>
+            <p className="text-xs font-semibold text-stone-400 font-mono mt-1">3 Monolithic Pavilions</p>
           </div>
 
           <div className="bg-[#141416] border border-stone-800 p-5 rounded-xl">
@@ -150,7 +150,7 @@ export function AdminDashboard({ onExit }: AdminDashboardProps) {
               <Layers size={14} className="text-[#C5A85C]" />
             </div>
             <p className="font-mono text-2xl font-bold text-white">LOD 350 / 400</p>
-            <p className="text-[11px] text-amber-400 font-mono mt-1">1 Revision Staged for Review</p>
+            <p className="text-xs font-semibold text-amber-400 font-mono mt-1">1 Revision Staged for Review</p>
           </div>
 
           <div className="bg-[#141416] border border-stone-800 p-5 rounded-xl">
@@ -159,7 +159,7 @@ export function AdminDashboard({ onExit }: AdminDashboardProps) {
               <Compass size={14} className="text-[#C5A85C]" />
             </div>
             <p className="font-mono text-2xl font-bold text-white">4 Certified AIA</p>
-            <p className="text-[11px] text-stone-400 font-mono mt-1">Lead: Elena Rostova, AIA</p>
+            <p className="text-xs font-semibold text-stone-400 font-mono mt-1">Lead: Elena Rostova, AIA</p>
           </div>
         </div>
 
@@ -234,7 +234,7 @@ export function AdminDashboard({ onExit }: AdminDashboardProps) {
                   <div className="space-y-1.5">
                     <div className="flex items-center space-x-2">
                       <span className="font-mono text-base font-bold text-white">{p.projectName}</span>
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#C5A85C]/10 text-[#C5A85C] border border-[#C5A85C]/30 font-semibold">
+                      <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 rounded bg-[#C5A85C]/10 text-[#C5A85C] border border-[#C5A85C]/30 font-semibold">
                         {p.typology}
                       </span>
                       <span className="text-xs font-mono text-stone-500">#{p.id}</span>
@@ -242,10 +242,10 @@ export function AdminDashboard({ onExit }: AdminDashboardProps) {
                     <p className="text-xs text-stone-300 font-mono">
                       Client: <span className="text-white font-semibold">{p.clientName}</span> • Area: <span className="text-stone-400">{p.sqft}</span>
                     </p>
-                    <p className="text-[11px] text-stone-400 font-mono">
+                    <p className="text-xs font-semibold text-stone-400 font-mono">
                       📐 Stage: <span className="text-[#C5A85C]">{p.stage}</span> • Lead: {p.leadArchitect} • Value: {p.contractValue}
                     </p>
-                    <p className="text-[11px] text-stone-500 font-mono">
+                    <p className="text-xs font-semibold text-stone-500 font-mono">
                       File: <code>{p.lastRevision}</code>
                     </p>
                   </div>
@@ -291,18 +291,18 @@ export function AdminDashboard({ onExit }: AdminDashboardProps) {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
               <div className="bg-[#0E0E10] border border-stone-800 p-4 rounded-xl space-y-2">
                 <span className="font-mono text-xs font-bold text-white block">MNL_001_Obsidian_LOD350.ifc</span>
-                <span className="text-[11px] text-stone-400 font-mono block">Size: 184 MB • Coordinated with MEP</span>
-                <span className="px-2 py-0.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono rounded inline-block">Zero Clashes Detected</span>
+                <span className="text-xs font-semibold text-stone-400 font-mono block">Size: 184 MB • Coordinated with MEP</span>
+                <span className="px-2 py-0.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold tracking-wider font-mono rounded inline-block">Zero Clashes Detected</span>
               </div>
               <div className="bg-[#0E0E10] border border-stone-800 p-4 rounded-xl space-y-2">
                 <span className="font-mono text-xs font-bold text-white block">MNL_002_Cantilever_Shear.dwg</span>
-                <span className="text-[11px] text-stone-400 font-mono block">Size: 42 MB • Post-tensioned Concrete</span>
-                <span className="px-2 py-0.5 bg-amber-500/10 text-amber-400 border border-amber-500/20 text-[10px] font-mono rounded inline-block">PE Review Pending</span>
+                <span className="text-xs font-semibold text-stone-400 font-mono block">Size: 42 MB • Post-tensioned Concrete</span>
+                <span className="px-2 py-0.5 bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-semibold tracking-wider font-mono rounded inline-block">PE Review Pending</span>
               </div>
               <div className="bg-[#0E0E10] border border-stone-800 p-4 rounded-xl space-y-2">
                 <span className="font-mono text-xs font-bold text-white block">MNL_003_Kyoto_Archive_Set.pdf</span>
-                <span className="text-[11px] text-stone-400 font-mono block">Size: 95 MB • 100% Construction Docs</span>
-                <span className="px-2 py-0.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono rounded inline-block">Archived &amp; Stamped</span>
+                <span className="text-xs font-semibold text-stone-400 font-mono block">Size: 95 MB • 100% Construction Docs</span>
+                <span className="px-2 py-0.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold tracking-wider font-mono rounded inline-block">Archived &amp; Stamped</span>
               </div>
             </div>
           </div>

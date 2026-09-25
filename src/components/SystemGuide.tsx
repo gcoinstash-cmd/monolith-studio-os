@@ -18,7 +18,7 @@ export const SystemGuide: React.FC<SystemGuideProps> = ({ isOpen, onToggle }) =>
             className="flex items-center space-x-3 focus:outline-none text-left cursor-pointer group"
             id="system-guide-toggle-btn"
           >
-            <div className="p-1 px-2 rounded-sm bg-[#C5A85C]/10 text-[#C5A85C] text-[10px] font-mono tracking-widest uppercase font-semibold">
+            <div className="p-1 px-2 rounded-sm bg-[#C5A85C]/10 text-[#C5A85C] text-xs font-semibold tracking-wider font-mono tracking-widest uppercase font-semibold">
               OS Guide
             </div>
             <h3 className="font-serif text-base text-stone-200 font-light group-hover:text-stone-100 transition-colors">
@@ -106,20 +106,20 @@ export const SystemGuide: React.FC<SystemGuideProps> = ({ isOpen, onToggle }) =>
                       key={p.num} 
                       className="p-3.5 bg-stone-950/40 border border-stone-900/60 rounded-sm flex gap-3.5 items-start text-left hover:border-stone-850/70 transition-all"
                     >
-                      <span className="font-mono text-[10px] text-[#C5A85C] font-semibold tracking-wider bg-[#C5A85C]/5 border border-[#C5A85C]/15 rounded-sm px-1.5 py-0.5 shrink-0">
+                      <span className="font-mono text-xs font-semibold tracking-wider text-[#C5A85C] font-semibold tracking-wider bg-[#C5A85C]/5 border border-[#C5A85C]/15 rounded-sm px-1.5 py-0.5 shrink-0">
                         {p.num}
                       </span>
                       <div className="space-y-1">
                         <div className="flex items-center space-x-1.5 flex-wrap">
-                          <h5 className="font-mono text-[11px] font-bold text-stone-200 tracking-wider">
+                          <h5 className="font-mono text-xs font-semibold font-bold text-stone-200 tracking-wider">
                             {p.name}
                           </h5>
                           <span className="text-stone-700 font-mono text-[9px]">&bull;</span>
-                          <span className="text-[10px] text-stone-400 font-serif italic">
+                          <span className="text-xs font-semibold tracking-wider text-stone-400 font-serif italic">
                             {p.tag}
                           </span>
                         </div>
-                        <p className="text-[11px] text-stone-300 leading-relaxed font-light">
+                        <p className="text-xs font-semibold text-stone-300 leading-relaxed font-light">
                           {p.desc}
                         </p>
                       </div>
@@ -130,7 +130,7 @@ export const SystemGuide: React.FC<SystemGuideProps> = ({ isOpen, onToggle }) =>
                 {/* Footnote instruction */}
                 <div className="p-3 bg-stone-900/10 border border-stone-900/35 rounded-sm flex items-start space-x-2 text-left">
                   <Info size={11} className="text-[#C5A85C]/90 mt-0.5" />
-                  <p className="text-[10px] font-sans text-stone-500 leading-relaxed font-light">
+                  <p className="text-xs font-semibold tracking-wider font-sans text-stone-500 leading-relaxed font-light">
                     Practice discipline. Transitioning your studio to structured attention is an exercise in editing. Limit your concurrent active work to avoid burnout and keep your creative assets pure.
                   </p>
                 </div>

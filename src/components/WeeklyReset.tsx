@@ -245,7 +245,7 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
               transition={{ delay: 0.3, duration: 0.8 }}
               className="space-y-3 max-w-md"
             >
-              <span className="text-[10px] font-mono uppercase tracking-[0.25em] text-[#C5A85C]">
+              <span className="text-xs font-semibold tracking-wider font-mono uppercase tracking-[0.25em] text-[#C5A85C]">
                 Weekly Alignment Harmonized
               </span>
               <h2 className="font-serif text-3xl font-light text-stone-100 tracking-tight">
@@ -263,7 +263,7 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
       <section className="bg-[#161616]/40 border border-stone-900/20 rounded-sm py-6 md:py-8 px-8 md:px-12 text-left relative overflow-hidden" id="reset-header">
         <div className="absolute top-0 right-0 w-32 h-32 bg-radial from-[#C5A85C]/5 to-transparent pointer-events-none" />
         <div className="flex flex-col space-y-2">
-          <div className="flex items-center space-x-1.5 text-[10px] font-mono uppercase tracking-[0.2em] text-[#C5A85C]">
+          <div className="flex items-center space-x-1.5 text-xs font-semibold tracking-wider font-mono uppercase tracking-[0.2em] text-[#C5A85C]">
             <span>Pillar 05</span>
             <span className="text-stone-700">&bull;</span>
             <span>Weekly Calibration Profile</span>
@@ -279,7 +279,7 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
         {/* PROGRESS BLOCK */}
         <div className="mt-6 pt-5 border-t border-stone-900/40 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <div className="space-y-1">
-            <span className="text-[10px] font-mono uppercase text-stone-400 tracking-wider">Calibration Progress</span>
+            <span className="text-xs font-semibold tracking-wider font-mono uppercase text-stone-400 tracking-wider">Calibration Progress</span>
             <div className="text-sm font-sans text-stone-200 flex items-center space-x-2">
               <span className="font-medium text-[#C5A85C]">{overallProgressPercent}%</span>
               <span className="text-stone-600 font-light">•</span>
@@ -335,7 +335,7 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
                   )}
                 </div>
                 <div>
-                  <h4 className={`text-[11px] font-serif tracking-wide block leading-tight ${isActive ? "text-stone-100" : "text-stone-400"}`}>
+                  <h4 className={`text-xs font-semibold font-serif tracking-wide block leading-tight ${isActive ? "text-stone-100" : "text-stone-400"}`}>
                     {step.label}
                   </h4>
                   <p className="text-[8.5px] font-sans font-light text-stone-400 mt-1 line-clamp-1 hidden md:block">
@@ -385,7 +385,7 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
                       <button
                         type="submit"
                         disabled={!mindDumpInput.trim()}
-                        className="text-[10px] font-mono uppercase tracking-wider bg-stone-900 hover:bg-[#C5A85C]/15 border border-stone-800 hover:border-[#C5A85C]/35 px-4 py-2 rounded-sm text-stone-300 hover:text-[#C5A85C] disabled:opacity-40 disabled:hover:text-stone-350 disabled:hover:border-stone-850 transition-all cursor-pointer flex items-center space-x-1 focus:outline-none"
+                        className="text-base font-semibold min-h-[44px] font-semibold tracking-wider font-mono uppercase tracking-wider bg-stone-900 hover:bg-[#C5A85C]/15 border border-stone-800 hover:border-[#C5A85C]/35 px-5 py-3 min-h-[44px] rounded-sm text-stone-300 hover:text-[#C5A85C] disabled:opacity-40 disabled:hover:text-stone-350 disabled:hover:border-stone-850 transition-all cursor-pointer flex items-center space-x-1 focus:outline-none"
                       >
                         <Plus size={11} />
                         <span>Dump Loop</span>
@@ -399,8 +399,8 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
                       <span className="text-[9px] font-mono uppercase text-stone-400 block">Captured in current session:</span>
                       <div className="max-h-24 overflow-y-auto space-y-1.5 pr-1">
                         {mindDumpedItems.map((item, idx) => (
-                          <div key={idx} className="text-[11px] text-stone-300 font-sans font-light flex items-start space-x-2 bg-stone-900/15 border border-stone-900/30 p-2 rounded-sm">
-                            <span className="text-[#C5A85C] text-[10px] mt-0.5">•</span>
+                          <div key={idx} className="text-xs font-semibold text-stone-300 font-sans font-light flex items-start space-x-2 bg-stone-900/15 border border-stone-900/30 p-2 rounded-sm">
+                            <span className="text-[#C5A85C] text-xs font-semibold tracking-wider mt-0.5">•</span>
                             <span>{item}</span>
                           </div>
                         ))}
@@ -410,7 +410,7 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
 
                   <div className="p-3.5 bg-stone-900/10 border border-stone-900/35 rounded-sm flex items-start space-x-2.5 text-left">
                     <Info size={11} className="text-[#C5A85C]/90 mt-0.5" />
-                    <p className="text-[10px] font-sans text-stone-500 leading-relaxed font-light">
+                    <p className="text-xs font-semibold tracking-wider font-sans text-stone-500 leading-relaxed font-light">
                       A clear mind registers deeper focus flow states. Aim to capture at least 2 key mental static elements before routing.
                     </p>
                   </div>
@@ -432,7 +432,7 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
                     <div className="py-6 px-4 border border-emerald-900/25 bg-emerald-950/15 rounded-sm text-xs font-mono text-emerald-450 flex flex-col items-center justify-center text-center space-y-2">
                       <CheckCircle2 size={16} className="text-emerald-400" />
                       <span className="font-semibold uppercase tracking-wider">Inbox Clean & Clear</span>
-                      <span className="text-[10px] text-stone-300 font-sans max-w-xs lowercase">
+                      <span className="text-xs font-semibold tracking-wider text-stone-300 font-sans max-w-xs lowercase">
                         All open loops are processed and routed. Your attention channels are zeroed.
                       </span>
                     </div>
@@ -479,7 +479,7 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
 
                   <div className="p-3 bg-stone-900/10 border border-stone-900/35 rounded-sm flex items-start space-x-2 text-left">
                     <Info size={11} className="text-[#C5A85C]/90 mt-0.5" />
-                    <p className="text-[10px] font-sans text-stone-500 leading-relaxed font-light">
+                    <p className="text-xs font-semibold tracking-wider font-sans text-stone-500 leading-relaxed font-light">
                       Processing is a strict exercise of sorting. Do not start executing tasks now. Build the system architecture first, executing occurs in the Focus block.
                     </p>
                   </div>
@@ -600,7 +600,7 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
                     <div className="space-y-1.5">
                       <div className="flex items-center space-x-1.5">
                         <PenTool size={11} className="text-[#C5A85C]" />
-                        <label className="text-[10px] font-mono text-stone-300 uppercase tracking-wider block">
+                        <label className="text-sm font-semibold tracking-wider font-mono text-stone-300 uppercase tracking-wider block">
                           What went right this past week?
                         </label>
                       </div>
@@ -618,7 +618,7 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
                     <div className="space-y-1.5">
                       <div className="flex items-center space-x-1.5">
                         <MessageSquareCode size={11} className="text-[#C5A85C]" />
-                        <label className="text-[10px] font-mono text-stone-300 uppercase tracking-wider block">
+                        <label className="text-sm font-semibold tracking-wider font-mono text-stone-300 uppercase tracking-wider block">
                           What is the primary operational lever for next week?
                         </label>
                       </div>
@@ -683,7 +683,7 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
                   <div className="flex flex-col justify-center items-center py-4">
                     <button
                       onClick={handleTriggerVaultDownload}
-                      className={`text-[10px] font-mono uppercase tracking-widest border rounded-sm px-6 py-3 transition-all cursor-pointer flex items-center space-x-2.5 focus:outline-none ${
+                      className={`text-xs font-semibold tracking-wider font-mono uppercase tracking-widest border rounded-sm px-6 py-3 transition-all cursor-pointer flex items-center space-x-2.5 focus:outline-none ${
                         step5Completed 
                           ? "bg-stone-900 border-stone-800 text-stone-400 hover:text-stone-300"
                           : "bg-stone-900/80 border-[#C5A85C]/35 text-[#C5A85C] hover:bg-stone-950 hover:border-[#C5A85C]"
@@ -708,7 +708,7 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
             <button
               onClick={() => setActiveStep(prev => Math.max(1, prev - 1))}
               disabled={activeStep === 1}
-              className="text-[10px] font-mono uppercase text-stone-300 hover:text-stone-250 disabled:opacity-30 disabled:hover:text-stone-500 transition-colors cursor-pointer flex items-center space-x-1 focus:outline-none"
+              className="text-xs font-semibold tracking-wider font-mono uppercase text-stone-300 hover:text-stone-250 disabled:opacity-30 disabled:hover:text-stone-500 transition-colors cursor-pointer flex items-center space-x-1 focus:outline-none"
             >
               <ArrowLeft size={11} />
               <span>Back</span>
@@ -717,7 +717,7 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
             {activeStep < 5 ? (
               <button
                 onClick={() => setActiveStep(prev => Math.min(5, prev + 1))}
-                className="text-[10px] font-mono uppercase text-[#C5A85C] hover:text-[#C5A85C]/80 transition-colors cursor-pointer flex items-center space-x-1.5 focus:outline-none"
+                className="text-xs font-semibold tracking-wider font-mono uppercase text-[#C5A85C] hover:text-[#C5A85C]/80 transition-colors cursor-pointer flex items-center space-x-1.5 focus:outline-none"
               >
                 <span>Next Phase</span>
                 <ArrowRight size={11} />
@@ -742,16 +742,16 @@ export const WeeklyReset: React.FC<WeeklyResetProps> = ({
         >
           <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#C5A85C] to-transparent" />
           <div className="space-y-1">
-            <span className="text-[10px] font-mono text-[#C5A85C] tracking-[0.25em] uppercase block">Alignment Fully Configured</span>
+            <span className="text-xs font-semibold tracking-wider font-mono text-[#C5A85C] tracking-[0.25em] uppercase block">Alignment Fully Configured</span>
             <h3 className="font-serif text-xl text-stone-100 font-light tracking-normal">Initialize New Execution Cycle</h3>
-            <p className="text-[11px] text-stone-400 font-sans font-light max-w-md mx-auto leading-relaxed">
+            <p className="text-xs font-semibold text-stone-400 font-sans font-light max-w-md mx-auto leading-relaxed">
               Completing the reset will clear completed items from the active board, reset habits, flush custom anchors, and log the alignment to local history.
             </p>
           </div>
 
           <button
             onClick={handleResetWorkspaceNewCycle}
-            className="w-full sm:w-auto bg-[#C5A85C] hover:bg-[#C5A85C]/90 text-stone-950 text-xs font-mono uppercase tracking-[0.15em] px-8 py-3 rounded-sm transition-all shadow-xl font-bold cursor-pointer focus:outline-none"
+            className="w-full sm:w-auto bg-[#C5A85C] hover:bg-[#C5A85C]/90 text-stone-950 text-base font-semibold min-h-[44px] font-mono uppercase tracking-[0.15em] px-8 py-3 rounded-sm transition-all shadow-xl font-bold cursor-pointer focus:outline-none"
           >
             Clean Slate & Start Cycle
           </button>

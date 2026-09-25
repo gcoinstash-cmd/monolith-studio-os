@@ -274,7 +274,7 @@ export const ActiveFocusChamber: React.FC<ActiveFocusChamberProps> = ({
               {activeFocusTask.title}
             </h2>
             {activeFocusTask.notes && (
-              <p className="text-xs md:text-sm text-stone-400 italic max-w-lg mx-auto font-sans font-light">
+              <p className="text-base font-semibold text-stone-400 italic max-w-lg mx-auto font-sans font-light">
                 “{activeFocusTask.notes}”
               </p>
             )}
@@ -294,7 +294,7 @@ export const ActiveFocusChamber: React.FC<ActiveFocusChamberProps> = ({
 
               <button
                 onClick={handleTaskCompleted}
-                className="bg-stone-900/50 border border-stone-850 hover:border-stone-600 text-stone-300 hover:text-stone-105 tracking-wide text-xs font-sans py-2.5 px-6 rounded-sm transition-all duration-500 ease-[0.16,1,0.3,1] hover:scale-[1.02] active:scale-[0.98] focus:outline-none cursor-pointer hover:bg-stone-850"
+                className="bg-stone-900/50 border border-stone-850 hover:border-stone-600 text-stone-300 hover:text-stone-105 tracking-wide text-base font-semibold min-h-[44px] font-sans py-2.5 px-6 rounded-sm transition-all duration-500 ease-[0.16,1,0.3,1] hover:scale-[1.02] active:scale-[0.98] focus:outline-none cursor-pointer hover:bg-stone-850"
                 id="finish-focus-btn"
               >
                 Mark Done
@@ -304,7 +304,7 @@ export const ActiveFocusChamber: React.FC<ActiveFocusChamberProps> = ({
             <div className="pt-2">
               <button
                 onClick={() => setIsAmbientActive(!isAmbientActive)}
-                className={`flex items-center space-x-2 text-[10px] font-mono tracking-wider px-3.5 py-1.5 rounded-sm border transition-all duration-500 cursor-pointer ${
+                className={`flex items-center space-x-2 text-xs font-semibold tracking-wider font-mono tracking-wider px-3.5 py-1.5 rounded-sm border transition-all duration-500 cursor-pointer ${
                   isAmbientActive 
                     ? "bg-[#C5A85C]/15 border-[#C5A85C]/40 text-[#C5A85C] animate-pulse" 
                     : "bg-transparent border-stone-850 text-stone-500 hover:text-stone-300"
@@ -355,13 +355,13 @@ export const ActiveFocusChamber: React.FC<ActiveFocusChamberProps> = ({
             <div className="w-full flex justify-between items-center max-w-4xl mx-auto z-10 px-4 opacity-70 hover:opacity-100 transition-opacity">
               <div className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#C5A85C] animate-pulse" />
-                <span className="text-[10px] uppercase tracking-[0.25em] font-mono font-medium text-stone-400">
+                <span className="text-xs font-semibold tracking-wider uppercase tracking-[0.25em] font-mono font-medium text-stone-400">
                   Visual Calm Active
                 </span>
               </div>
               <button
                 onClick={() => onFocusActiveChange(false)}
-                className="text-[10px] font-mono text-stone-400 hover:text-stone-100 transition-colors uppercase tracking-[0.2em] bg-stone-900/60 border border-stone-850 px-3 py-1.5 rounded-sm cursor-pointer"
+                className="text-xs font-semibold tracking-wider font-mono text-stone-400 hover:text-stone-100 transition-colors uppercase tracking-[0.2em] bg-stone-900/60 border border-stone-850 px-3 py-1.5 rounded-sm cursor-pointer"
                 id="exit-visual-calm-btn"
               >
                 Return to Workspace
@@ -373,14 +373,14 @@ export const ActiveFocusChamber: React.FC<ActiveFocusChamberProps> = ({
               
               {/* Single Current Focus Task Title */}
               <div className="space-y-3">
-                <span className="text-[10px] uppercase tracking-[0.35em] text-[#C5A85C]/60 font-mono block">
+                <span className="text-xs font-semibold tracking-wider uppercase tracking-[0.35em] text-[#C5A85C]/60 font-mono block">
                   Committing attention to
                 </span>
                 <h2 className="font-serif text-3.5xl md:text-5.5xl text-stone-50 font-light tracking-tight leading-snug px-2 max-w-2xl mx-auto">
                   {activeFocusTask.title}
                 </h2>
                 {activeFocusTask.notes && (
-                  <p className="text-xs md:text-sm text-stone-400 italic max-w-lg mx-auto font-sans font-light tracking-wide px-4">
+                  <p className="text-base font-semibold text-stone-400 italic max-w-lg mx-auto font-sans font-light tracking-wide px-4">
                     “{activeFocusTask.notes}”
                   </p>
                 )}
@@ -452,7 +452,7 @@ export const ActiveFocusChamber: React.FC<ActiveFocusChamberProps> = ({
                             e.stopPropagation();
                             selectPreset(mins);
                           }}
-                          className={`text-[10px] font-mono px-3 py-1 rounded-sm cursor-pointer transition-all ${
+                          className={`text-xs font-semibold tracking-wider font-mono px-3 py-1 rounded-sm cursor-pointer transition-all ${
                             durationPreset === mins 
                               ? "bg-[#C5A85C]/15 text-[#C5A85C] border border-[#C5A85C]/35" 
                               : "text-stone-500 hover:text-stone-300"
@@ -506,7 +506,7 @@ export const ActiveFocusChamber: React.FC<ActiveFocusChamberProps> = ({
             <div className="w-full max-w-xl mx-auto flex items-center justify-between border-t border-stone-900/60 pt-6 z-10 px-4">
               <button
                 onClick={handleResetTimer}
-                className="bg-transparent border border-stone-900 hover:border-stone-800 text-stone-550 hover:text-stone-300 px-4 py-2 rounded-sm text-[10px] font-mono uppercase tracking-widest transition-all cursor-pointer"
+                className="bg-transparent border border-stone-900 hover:border-stone-800 text-stone-550 hover:text-stone-300 px-5 py-3 min-h-[44px] rounded-sm text-base font-semibold min-h-[44px] font-semibold tracking-wider font-mono uppercase tracking-widest transition-all cursor-pointer"
                 title="Reset timer to preset value"
               >
                 Reset Session
@@ -514,7 +514,7 @@ export const ActiveFocusChamber: React.FC<ActiveFocusChamberProps> = ({
 
               <button
                 onClick={() => setIsTimerRunning(!isTimerRunning)}
-                className={`flex items-center space-x-2 border py-2.5 px-8 rounded-sm text-[11px] font-mono uppercase tracking-widest font-semibold transition-all duration-300 cursor-pointer ${
+                className={`flex items-center space-x-2 border py-2.5 px-8 rounded-sm text-xs font-semibold font-mono uppercase tracking-widest font-semibold transition-all duration-300 cursor-pointer ${
                   isTimerRunning 
                     ? "bg-transparent border-stone-700 text-stone-300 hover:border-stone-100" 
                     : "bg-[#C5A85C] border-[#C5A85C] text-stone-950 hover:bg-[#C5A85C]/90"
@@ -526,7 +526,7 @@ export const ActiveFocusChamber: React.FC<ActiveFocusChamberProps> = ({
 
               <button
                 onClick={handleTaskCompleted}
-                className="bg-stone-950 border border-[#C5A85C]/20 hover:border-[#C5A85C]/50 text-[#C5A85C] hover:text-stone-100 py-2 px-4 rounded-sm text-[10px] font-mono uppercase tracking-widest transition-all cursor-pointer"
+                className="bg-stone-950 border border-[#C5A85C]/20 hover:border-[#C5A85C]/50 text-[#C5A85C] hover:text-stone-100 py-2 px-4 rounded-sm text-base font-semibold min-h-[44px] font-semibold tracking-wider font-mono uppercase tracking-widest transition-all cursor-pointer"
                 id="immersive-complete-btn"
               >
                 Complete Objective
@@ -562,7 +562,7 @@ export const ActiveFocusChamber: React.FC<ActiveFocusChamberProps> = ({
                 <div className="flex justify-center mb-1">
                   <Trophy size={20} className="text-[#C5A85C]" />
                 </div>
-                <span className="text-[10px] font-mono tracking-[0.3em] text-[#C5A85C] uppercase block">
+                <span className="text-xs font-semibold tracking-wider font-mono tracking-[0.3em] text-[#C5A85C] uppercase block">
                   Pristine Focus Achieved
                 </span>
                 <div className="w-8 h-[1px] bg-stone-850 mx-auto mt-2" />
@@ -588,7 +588,7 @@ export const ActiveFocusChamber: React.FC<ActiveFocusChamberProps> = ({
                     setShowSuccess(false);
                     onFocusActiveChange(false);
                   }}
-                  className="text-[10px] font-mono tracking-[0.25em] text-[#C5A85C] hover:text-stone-950 bg-transparent hover:bg-[#C5A85C] border border-[#C5A85C]/40 px-8 py-3 rounded-sm transition-all duration-300 font-bold uppercase cursor-pointer"
+                  className="text-xs font-semibold tracking-wider font-mono tracking-[0.25em] text-[#C5A85C] hover:text-stone-950 bg-transparent hover:bg-[#C5A85C] border border-[#C5A85C]/40 px-8 py-3 rounded-sm transition-all duration-300 font-bold uppercase cursor-pointer"
                   id="modal-reset-close"
                 >
                   Conclude Focus Session & Return
